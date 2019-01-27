@@ -6,7 +6,8 @@ class Home extends Component {
   render() {
     return (
     <div className="App">
-      <h1>Project Home</h1>
+      <h1>Project Home To Vampiro
+      </h1>
       {/* Link to List.js */}
       <Link to={'./list'}>
         <button variant="raised">
