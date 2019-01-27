@@ -26,7 +26,7 @@ class List extends Component {
 
     return (
       <div className="App">
-        <h1>List of Items</h1>
+        <h1>Lista</h1>
         {/* Check to see if any items are found*/}
         {list.length ? (
           <div>
