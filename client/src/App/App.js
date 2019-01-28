@@ -6,9 +6,11 @@ import Home from './home/Home';
 class App extends Component {
   render() {
     return (
-      <Switch>
-        <Route exact path='/' component={Home}/> 
-      </Switch>
+      <div className="app">
+        <Switch>
+          <Route exact path='/' component={Home}/> 
+        </Switch>
+      </div>
     );
   }
 }
