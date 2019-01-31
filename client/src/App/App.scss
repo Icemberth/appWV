@@ -1,0 +1,14 @@
+@import "./../App/scss/fonts";
+
+body, html {
+  @extend .font-family-courgette;
+  height: 100%;
+  background-image: url('./../assets/images/principalbakcground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.app {
+  height: 100%;
+  
+}
