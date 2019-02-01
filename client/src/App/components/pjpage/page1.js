@@ -1,45 +1,45 @@
 import React, { Component } from 'react';
-
+import './page1.scss';
 class page1 extends Component {
     render (){
         return (
-            <div className="body">
+            <div className="container-general">
                 <div className="page-general">
-                    <div class="concept-container">
                     <div class="name">
-                        <h3>Nombre</h3>
+                        <h3>Name</h3>
                         <input type="text" class="name-input" />
                     </div>
-                    <div class="cronica">
-                        <h3>Concepto</h3>
+                    <div class="concept-container">
+                    <div class="concepts">
+                        <h3>Concept</h3>
                         <input type="text" class="cronica-input" />
                     </div>
-                    <div class="sire">
-                        <h3>Depredador</h3>
+                    <div class="concepts">
+                        <h3>Predator</h3>
                         <input type="text" class="sire-input" />
                     </div>
-                    <div class="concept">
-                        <h3>Crónica</h3>
+                    <div class="concepts">
+                        <h3>Chroonicle</h3>
                         <input type="text" class="concept-input" />
                     </div>
-                    <div class="ambicion">
-                        <h3>Ambición</h3>
+                    <div class="concepts">
+                        <h3>Aspiration</h3>
                         <input type="text" class="ambicion-input" />
                     </div>
-                    <div class="deseo">
+                    <div class="concepts">
                         <h3>Clan</h3>
                         <input type="text" class="deseo-input" />
                     </div>
-                    <div class="depredador">
+                    <div class="concepts">
                         <h3>Sire</h3>
                         <input type="text" class="depredador-input" />
                     </div>
-                    <div class="clan">
-                        <h3>Deseo</h3>
+                    <div class="concepts">
+                        <h3>Desire</h3>
                         <input type="text" class="clan-input" />
                     </div>
-                    <div class="generation">
-                        <h3>Generación</h3>
+                    <div class="concepts">
+                        <h3>Generation</h3>
                         <input type="text" class="generation-input" />
                     </div>
                     </div>

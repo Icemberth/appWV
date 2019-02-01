@@ -1,0 +1,68 @@
+@import './../../scss/mixins';
+
+
+@include mobile {
+
+
+.container-general {
+  background: rgb(251, 245, 237);
+  width: 80%;
+  
+  margin: 0 auto;
+  margin-top: 10px;
+
+  padding: 10px 10px 10px 10px;
+  border: 3px double rgb(183, 122, 124);
+  border-radius: 30px;
+  .page-general {
+    display: grid;
+    grid-template-columns: minmax(auto, 280px);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    .name{
+      border: 1px solid;
+      padding-bottom: 0.5em;
+      margin: 0.5em;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+    }
+      .concept-container {
+        display: inline-grid;
+        gap: 0.3em;
+        grid-template-columns: 50% 50%;
+
+        div{
+          &:nth-child(7){
+            border-bottom-left-radius: 20px;
+          }
+          &:nth-child(8){
+            border-bottom-right-radius: 20px;
+          }
+        }
+          .concepts {
+            border: 1px solid;
+            padding-bottom: 0.5em;
+            input{
+              width: 80%
+            }
+            h3 {
+              margin: 0.5em;
+            }
+          }
+      }
+  } 
+}
+     
+    
+  
+    
+   
+    
+    
+
+
+}
+
+
