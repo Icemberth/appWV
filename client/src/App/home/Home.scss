@@ -1,2 +1,36 @@
  @import "./../scss/fonts";
  
+.Hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ .wrapper {
+    background: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    height: 40vh;
+    width: 56vh;
+    color: #790914;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.1em;
+   
+  }
+  .wrapper p {
+      color: black;
+      font-size: 0.2em;
+  }
+  .Facebook, .twitter {
+      background: white;
+      height: 100px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      text-align: center;
+  }
