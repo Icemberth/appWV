@@ -4,7 +4,7 @@
 @include mobile {
 
 
-.container-general {
+.container-concepts {
   background: rgb(251, 245, 237);
   width: 80%;
   
@@ -14,7 +14,7 @@
   padding: 10px 10px 10px 10px;
   border: 3px double rgb(183, 122, 124);
   border-radius: 30px;
-  .page-general {
+  .page-concepts {
     display: grid;
     grid-template-columns: minmax(auto, 280px);
     justify-content: center;
@@ -55,7 +55,31 @@
   } 
 }
      
-    
+.container-attributes{
+  background: rgb(251, 245, 237);
+  width: 80%;
+  
+  margin: 0 auto;
+  margin-top: 10px;
+
+  padding: 10px 10px 10px 10px;
+  border: 3px double rgb(183, 122, 124);
+  border-radius: 30px;
+  h2{
+    text-align: center;
+  }
+  .attributes-button{
+    display: flex;
+    justify-content: center;
+  }
+  .general-attributes {
+    display: grid;
+    grid-template-columns: minmax(auto, 280px);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+}    
   
     
    
