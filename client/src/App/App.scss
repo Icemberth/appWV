@@ -1,4 +1,5 @@
-@import "./../App/scss/fonts";
+@import "./../App/scss/all";
+
 
 body, html {
   @extend .font-family-courgette;
@@ -10,5 +11,5 @@ body, html {
 }
 .app {
   height: 100%;
-  
+  color: $color-red;
 }
