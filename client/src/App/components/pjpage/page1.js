@@ -67,49 +67,107 @@ class page1 extends Component {
         <button onClick={()=>this.changeAttribute('mentals')}>Mentales</button>
         </div>
         <div className="general-attributes">
-        {
-          this.state.showAttributes=='physical'? (
-        
-          <div className="physical-attributes" >
-            
-            <h3>Fuerza</h3>
-              <input type="radio" /><input type="radio" />
-              <input type="radio" /><input type="radio" />
-              <input type="radio" />
-            <h3>Destreza</h3>
-            <h3>Resistencia</h3>
-          </div>
-          )
-          :(
-            <div></div>
-          )
-        }
-        {
-          this.state.showAttributes=='social' ? (
-            <div className="social-attributes">
-            <h3>Carisma</h3>              
-            <h3>Manipulación</h3>
-            <h3>Compostura</h3>
-          </div>
-          )
-          :(
-            <div></div>
-          )
-        }
-        {
-          this.state.showAttributes=='mentals' ? (
-          <div className="mentals-attributes">
-            
-            <h3>Inteligencia</h3>
-            <h3>Astucia</h3>
-            <h3>Resolución</h3>
-          </div>
+          {
+            this.state.showAttributes=='physical'? (
           
-         )
-          :(
-            <div></div>
+            <div className="physical-attributes" >
+              <section>
+                <h3>Fuerza</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+              <section>
+                <h3>Destreza</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+              <section>
+                <h3>Resistencia</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+            </div>
+            )
+            :(
+              <div></div>
+            )
+          }
+          {
+            this.state.showAttributes=='social' ? (
+              <div className="social-attributes">
+              <section>
+                <h3>Carisma</h3>              
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+              <section>
+                <h3>Manipulación</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+              <section>
+                <h3>Compostura</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+            </div>
+            )
+            :(
+              <div></div>
+            )
+          }
+          {
+            this.state.showAttributes=='mentals' ? (
+            <div className="mentals-attributes">
+              <section>
+                <h3>Inteligencia</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+              <section>
+                <h3>Astucia</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+              <section>
+                <h3>Resolución</h3>
+                <div>
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" /><input type="radio" />
+                  <input type="radio" />
+                </div>
+              </section>
+            </div>
+            
           )
-        }
+            :(
+              <div></div>
+            )
+          }
         </div>
       </div>
       

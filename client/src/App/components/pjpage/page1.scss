@@ -73,20 +73,48 @@
     justify-content: center;
   }
   .general-attributes {
-    display: grid;
-    grid-template-columns: minmax(auto, 280px);
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .physical-attributes {
+      h3{
+        margin: 5px;
+        
+      }
+      section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+      }
+
+    }
+    .social-attributes {
+      h3{
+        margin: 5px;
+      }
+      section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    .mentals-attributes {
+      h3 {
+        margin: 5px;
+      }
+      section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
   }
 }    
-  
-    
-   
-    
-    
-
-
 }
 
 
