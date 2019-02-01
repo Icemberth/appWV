@@ -6,7 +6,7 @@ class Home extends Component {
   render() {
     return (
       <div className="wrapper">        
-        Hola que hace
+        Hola que hace, ji ji ji
       </div>
     );
   }
