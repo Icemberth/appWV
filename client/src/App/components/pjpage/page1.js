@@ -5,9 +5,13 @@ class page1 extends Component {
   constructor(props){
     super(props);
     this.state = {
-      showAttributes:'physical'
+      showAttributes:'physical',
+      showSkills:'physical-skill'
     }
     /* this.changeAttribute=this.changeAttribute.bind(this); */
+  }
+  changeSkill(skill){
+    this.setState({showSkills:skill})
   }
   changeAttribute(attribute){
       this.setState({showAttributes:attribute}) 
@@ -173,13 +177,13 @@ class page1 extends Component {
       <div className="container-skills">
         <h2>Habilidades</h2>
         <div className="attributes-button">
-          <button onClick={()=>this.changeAttribute('physical')}>Físicos</button>
-          <button onClick = {()=>this.changeAttribute('social')} >Sociales</button>
-          <button onClick={()=>this.changeAttribute('mentals')}>Mentales</button>
+          <button onClick={()=>this.changeSkill('physical-skill')}>Físicos</button>
+          <button onClick = {()=>this.changeSkill('social-skill')} >Sociales</button>
+          <button onClick={()=>this.changeSkill('mentals-skill')}>Mentales</button>
         </div>
         <div className="general-attributes">
           {
-            this.state.showAttributes==='physical'? (
+            this.state.showSkills==='physical-skill'? (
           
             <div className="physical-attributes" >
               <section>
@@ -261,7 +265,7 @@ class page1 extends Component {
             )
           }
           {
-            this.state.showAttributes==='social' ? (
+            this.state.showSkills==='social-skill' ? (
               <div className="social-attributes">
               <section>
                 <h3>Callejeo</h3>              
@@ -342,7 +346,7 @@ class page1 extends Component {
             )
           }
           {
-            this.state.showAttributes==='mentals' ? (
+            this.state.showSkills==='mentals-skill' ? (
             <div className="mentals-attributes">
               <section>
                 <h3>Academicismo</h3>
